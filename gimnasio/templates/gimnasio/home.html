@@ -1,0 +1,47 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %} <!-- Assuming you have a base template -->
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Welcome to Our Boxing Website!</h1>
+            <p>Stay updated with the latest boxing news, upcoming events, and more.</p>
+            <p>Join us to experience the thrill of the ring!</p>
+        </div>
+    </div>
+
+    <!-- Featured upcoming matches or events -->
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <h2>Featured Matches</h2>
+            <!-- Add your featured matches/events content here -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upcoming Title Fight</h5>
+                    <p class="card-text">Date: January 15, 2024</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <!-- Repeat this structure for multiple featured matches/events -->
+        </div>
+    </div>
+
+    <!-- Latest news or updates -->
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <h2>Latest News</h2>
+            <!-- Add your latest news content here -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">New Champion Crowned</h5>
+                    <p class="card-text">Read about the recent title match and the new champion!</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+            <!-- Repeat this structure for multiple news articles -->
+        </div>
+    </div>
+</div>
+{% endblock %}
